@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=NE, initial-scale=1.0">
+    <title>Netflix project</title>
+    <style>
+        body {
+          background-image: url(./image/netflix_2.jpg);
+          background-position: center;
+        }
+          .box-1{
+            background-color:rgba(0, 0, 0, 0.8);
+            width: 450px;
+            height: 790px;
+            position: absolute;
+            top: 130px;
+            left: 520px;
+          }
+          .box-2{
+            background-color:rgba(0, 0, 0, 0.400);
+            width:95%;
+            height:95%;
+            position: fixed;
+            top:3%;
+            left: 2%;
+            z-index: -1;
+
+          }
+      
+        #flix {
+          color:red;
+        }
+        h1 {
+          font-style: normal;
+          font-family: 'Bowlby One', cursive;
+          font-size: 50px;
+          font-weight:900;
+          color: white;
+          margin: 0%;
+          padding: 0%;
+          overflow:visible;
+          text-align: center;
+        
+        }
+        h3 {
+          font-style:normal;
+          font-family: 'Sorts Mill Goudy', serif;
+          font-size:larger;
+          color: white;
+          margin: 0%;
+          padding: 0%;
+          overflow:visible;
+          z-index:9999; 
+          text-align: center;
+        }
+        #first {
+          font-size: 60px;
+        }
+  
+        #info { color: white;
+          text-align: justify;
+          height: 20px;
+
+        }
+        #inner_boxes {
+          color:white;
+          font-style:normal;
+          font-family:Arial, Helvetica, sans-serif;
+          padding: 8px;
+          margin: 0px;
+          position: relative;
+          left: 550px;
+          
+        }
+        #content {
+          color: black;
+          font-style:normal;
+          font-family:Arial, Helvetica, sans-serif;
+          padding: 10px;
+          position: relative;;
+          left: 550px;
+        }
+
+        #Name {
+          color: black;
+          font-style:normal;
+          font-family:Arial, Helvetica, sans-serif;
+          padding: 15px;
+          position: relative;;
+          left: 550px;
+        }
+        select {
+          width: 350px;
+          padding: 5px;}
+        #textarea {
+          color: black;
+          font-style:normal;
+          font-family:Arial, Helvetica, sans-serif;
+          padding: 20px;
+          position: relative;
+        }
+        #type {
+          color:white;
+          font-style:normal;
+          font-family:Arial, Helvetica, sans-serif;
+          padding: 0px;
+          margin: 0px;
+          position: relative;
+          left: 550px;
+        }
+        #submit_button {
+          background-color:rgb(180, 0, 0);
+          color: white;
+          border-radius: 100px;
+          border-style: none;
+          width: 100px;
+          height : 40px;
+          position: relative;
+          left: 680px;
+                }
+
+        </style>
+        
+</head>
+<body>
+  <div>
+    <h1><span id = "first">N</span>ET<span id = "flix"><span id="first">F</span>LIX</span> </h1>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+  </div>
+  <div> <h3>Thank you for singing up at Netflix. Tell us more about your self.</h3>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+
+  <div>
+   <form action="result.html" name="myfirstproject"></form>
+  </div>
+  <div class="box-1">
+  </div>
+  <div class="box-2">
+  </div>
+  <form action = "result.html" name = "myfirstproject">
+  <div> <br>
+    <label for="Name" id = "inner_boxes">Name  </label> <br> <br>
+    <input type="text" name="Name" id="Name" size = "45" placeholder="Enter Your Name"> <br> <br>
+    <label for="age" id = "inner_boxes">Age</label> <br> <br>
+    <input type="age" name="age" id="Name" size="45" placeholder="Age"> <br> <br>
+    <label for="email" id = "inner_boxes">Email</label> <br> <br>
+    <input type="email" name="email" id="Name" size="45" placeholder="Enter your email"> <br> 
+    <p id="inner_boxes">Content type</p>
+      <select name="contents" id="content" >
+        <option value="Series" >Series</option>
+        <option value="policier">policier</option>
+        <option value="history">historical</option>
+      </select> <br> <br>
+    <p id="type">Movie type</p>
+    <div id="inner_boxes">
+      
+      <input type="checkbox" name="movie" value="Comedy">Comedy <br>
+      <input type="checkbox" name="movie" value="Action">Action <br>
+      <input type="checkbox" name="movie" value="Romance" checked >Romance <br>
+    </div>
+    <p id="type" >Gender</p>
+    <div id="inner_boxes">
+      <label for="first-radio"><input type="radio" name="gender" value="male" id = "first-radio" checked> Male <br></label>
+      <label for="second-radio"><input type="radio" name="gender" value="female" id = "second-radio"> Female <br></label>
+      <label for="third-radio"><input type="radio" name="gender" value="other" id = "third-radio"> Other <br></label>
+      
+    </div>
+    <p id="type">  Feed back </p>
+    <div id="inner_boxes">
+      <textarea name = "comments" rows="5" cols="45" placeholder="Any Comment" id="textarea" ></textarea>
+    </div>
+  </div>
+  <div >
+    <input type="submit" value="Submit" id = "submit_button">
+  </div>
+</form>
+</body>
+</html>
